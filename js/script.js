@@ -49,27 +49,6 @@ dropdownMenuButtons.forEach((button) => {
 
 
 
-// carousel
-const carouselSlide = document.querySelector('.carousel-slide');
-        const slideImages = document.querySelectorAll('.carousel-slide > div');
-
-        let counter = 0;
-        let direction = 1; // 1 for forward, -1 for backward
-        const size = slideImages[0].clientWidth;
-
-        function changeSlide() {
-            counter += direction;
-            if (counter === slideImages.length - 1) {
-                direction = -1; // Change direction to backward
-            } else if (counter === 0) {
-                direction = 1; // Change direction to forward
-            }
-
-            carouselSlide.style.transform = `translateX(-${counter * size}px)`;
-        }
-
-        setInterval(changeSlide, 3000); // Change slide every 3 seconds
-// carousel
 
 
 

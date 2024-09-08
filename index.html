@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokalind - Menumbuhkan Industri Indonesia</title>
     <link rel="shortcut icon" href="src/logo (1).png" type="image/x-icon">
@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <style>
         /* Carousel animation */
     </style>
@@ -28,21 +28,23 @@
             <div class="flex items-center w-full justify-between h-16">
                 <!-- Logo and Brand Name -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="h-8 w-8" src="src/logo (1).png" alt="Logo">
-                    <span class="ml-2 md:text-3xl text-xl font-bold" style="color: #2A324B;">Lokal<span
-                            style="color: #D39362;">ind</span>
-                    </span>
+                    <a href="index.html" class="flex">
+                        <img class="h-8 w-8" src="src/logo (1).png" alt="Logo">
+                        <span class="ml-2 md:text-3xl text-xl font-bold" style="color: #2A324B;">Lokal<span
+                                style="color: #D39362;">ind</span>
+                        </span>
+                    </a>
                 </div>
                 <div class="flex">
                     <!-- Navigation Links (for larger screens) -->
                     <div class="items-center flex md:space-x-6 space-x-3">
                         <div class="hidden md:flex space-x-4 items-center">
-                            <a href="#"
+                            <a href="page/search.html"
                                 class="text-[#1E1E1E] font-semibold hover:text-[#767B91] transition duration-500 ease-in-out">Jelajahi</a>
-                            <a href="#"
+                            <a href="page/community.html"
                                 class="text-[#1E1E1E] font-semibold hover:text-[#767B91] transition duration-500 ease-in-out">Komunitas</a>
                         </div>
-                        <a href="#" class="">
+                        <a href="page/search.html" class="">
                             <svg class="md:w-6 w-4 text-[#1E1E1E] hover:text-[#767B91]"
                                 xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
                                 fill="none">
@@ -110,8 +112,8 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden absolute w-full">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-50">
-                <a href="#" class="block text-[#1E1E1E] font-semibold hover:text-[#767B91]">Jelajahi</a>
-                <a href="#" class="block text-[#1E1E1E] font-semibold hover:text-[#767B91]">Komunitas</a>
+                <a href="page/search.html" class="block text-[#1E1E1E] font-semibold hover:text-[#767B91]">Jelajahi</a>
+                <a href="page/community.html" class="block text-[#1E1E1E] font-semibold hover:text-[#767B91]">Komunitas</a>
             </div>
         </div>
     </nav>
@@ -203,8 +205,9 @@
                 <input type="search" id="default-search"
                     class="block w-full p-4 md:ps-10 ps-6 md:text-sm text-[11px] text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:border-slate-700"
                     placeholder="Cari informasi/berita/artikel....." />
-                <button type="submit"
-                    class="text-white absolute end-2.5 bottom-2.5 bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg md:text-sm text-[10px] px-4 py-2 ">Cari</button>
+                    <a href="page/search.html" type="submit"
+                    class="text-white absolute end-2.5 bottom-2.5 bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg md:text-sm text-[10px] px-4 py-2"  >Cari</a>
+                
             </div>
         </form>
 
@@ -214,9 +217,12 @@
     <!-- news -->
     <div class="flex justify-between mt-10 mb-10">
         <p class="font-bold text-2xl text-[#2A324B]">Berita <span class="text-[#D39362]">Terbaru</span></p>
-        <button type="submit"
+        <a href="page/search.html">
+            <button type="submit"
             class="text-white  end-2.5 bottom-2.5 bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg md:text-sm text-[10px] px-4 py-2 ">Lihat
             Semua</button>
+        </a>
+        
     </div>
     <div class="w-full h-auto  grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-3">
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
@@ -226,7 +232,7 @@
 
                 <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
                     Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
                     Lihat Berita
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -238,13 +244,12 @@
             </div>
         </div>
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 2.png" alt="" />
             <div class="">
-                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
+                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">2 Jam yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">BPKP Pelototi Penerapan Harga Gas Murah Buat Industri, Kenapa?</h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
                     Lihat Berita
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -256,13 +261,12 @@
             </div>
         </div>
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 3.png" alt="" />
             <div class="">
-                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
+                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 hari yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Dorong Industri, IEE Series Siap Hadir Bawa Berbagai Solusi Inovasi</h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
                     Lihat Berita
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -274,13 +278,12 @@
             </div>
         </div>
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 2.png" alt="" />
             <div class="">
-                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
+                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">2 hari yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">BPKP Pelototi Penerapan Harga Gas Murah Buat Industri, Kenapa?</h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
                     Lihat Berita
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -299,21 +302,24 @@
     <!-- article -->
     <div class="flex justify-between mt-20 mb-10">
         <p class="font-bold text-2xl text-[#2A324B]">Artikel <span class="text-[#D39362]">Populer</span></p>
-        <button type="submit"
+        <a href="page/search.html">
+            <button type="submit"
             class="text-white  end-2.5 bottom-2.5 bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg md:text-sm text-[10px] px-4 py-2 ">Lihat
             Semua</button>
+        </a>
+        
     </div>
     <div class="w-full h-auto  grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-3">
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 2.png" alt="" />
             <div class="">
                 <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Membangun Masa Depan: Potensi dan Peluang Industri Indonesia
+                </h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
-                    Lihat Berita
+                    Lihat artikel
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -323,15 +329,15 @@
             </div>
         </div>
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 5.png" alt="" />
             <div class="">
-                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
+                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">2 hari yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Inovasi Industri Lokal agar dapat bisa Menembus Pasar Global
+                </h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
-                    Lihat Berita
+                    Lihat artikel
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -341,15 +347,15 @@
             </div>
         </div>
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 6.png" alt="" />
             <div class="">
-                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
+                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 minggu yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Generasi Muda dan Peran Mereka dalam Pengembangan Industri 
+                </h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
-                    Lihat Berita
+                    Lihat artikel
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -359,15 +365,15 @@
             </div>
         </div>
         <div class="w-full h-auto bg-white border border-gray-200 rounded-lg shadow md:p-3 p-2 ">
-            <img class="rounded-t-lg mb-5" src="src/news1.png" alt="" />
+            <img class="rounded-t-lg mb-5" src="src/image 7.png" alt="" />
             <div class="">
-                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 Jam yang lalu ...</p>
+                <p class="mb-1 md:text-xs text-[10px] text-gray-700 ">1 bulan yang lalu ...</p>
 
-                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Orang RI Beli Barang Impor Murah,
-                    Menufaktur RI Kena Efek Buruk</h5>
-                <a href="#"
+                <h5 class="mb-2 md:text-sm text-[10px]  font-bold text-gray-900">Strategi Pemasaran Efektif bagi Pelaku Industri di Era Digital
+                </h5>
+                <a href="page/detail.html"
                     class="inline-flex items-center px-3 py-2 mt-4 md:text-xs text-[8px] font-medium text-center text-white bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 rounded-lg">
-                    Lihat Berita
+                    Lihat artikel
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -406,11 +412,11 @@
                         Lokal<span class="text-[#D39362]">ind</span></p>
                 </div>
             </div>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt eaque a at
-                molestias sint rem incidunt repellat, repellendus ad harum, illum molestiae consequatur tenetur.</p>
+            <p class="text-sm">Platform website yang hadir untuk membantu perkembangan industri di indonesia, dengan
+                memberikan informasi dalam bentuk edukasi yang mudah diakses oleh masyarakat luas</p>
             <div class="h-5"></div>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt eaque a at
-                molestias sint rem incidunt repellat, repellendus ad harum, illum molestiae consequatur tenetur.</p>
+            <p class="text-sm">Lokalind sebagai pusat penyedia informasi industri yang lengkap dan akurat, dengan
+                informasi yang selalu terupdate</p>
         </div>
     </div>
     <!-- Lokalind info -->
@@ -429,11 +435,14 @@
                         Bergabunglah dengan komunitas <span class="text-[#D39362]">Kami</span></p>
                 </div>
             </div>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt eaque a at
-                molestias sint rem incidunt repellat, repellendus ad harum, illum molestiae consequatur tenetur.</p>
-            <button type="submit"
+            <p class="text-sm">Temukan komunitas anda, dan mulai berinteraksi dan kolaborasi kepada masyarakat secara
+                luas</p>
+                <a href="page/community.html">
+                    <button type="submit"
                 class="text-white mt-3  end-2.5 bottom-2.5 bg-[#2A324B] hover:bg-[#767B91] transition duration-500 ease-in-out focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg md:text-sm text-[10px] px-4 py-2 ">Lihat
                 Komunitas</button>
+                </a>
+            
         </div>
         <div class="flex  align-center items-center justify-center">
             <img class="md:w-[420px] w-[300px] " src="src/community.png" alt="">
@@ -460,7 +469,7 @@
                     <div class="border rounded-[20px] border-2 border-slate-200 mt-5 md:mr-3 ">
                         <button onclick="toggleAccordion(1)"
                             class="w-full bg-white flex justify-between items-center p-5 text-[#2A324B] rounded-[20px]">
-                            <span class="font-bold">What can I do with Material Tailwind?</span>
+                            <span class="font-bold">Memperkenalkan ragam industri di indonesia</span>
                             <span id="icon-3" class=" transition-transform duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                     class="w-4 h-4">
@@ -471,15 +480,16 @@
                         </button>
                         <div id="content-1" class="h-auto overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="pb-5 text-sm text-slate-500 m-3 font-medium ">
-                                Material Tailwind allows you to quickly build modern, responsive websites with a focus
-                                on design.
+                                Memperkenalkan berbagai macam industri di Indonesia sekaligus meningkatkan kesadaran
+                                masyarakat tentang potensi industri tersebut.
+
                             </div>
                         </div>
                     </div>
                     <div class="border rounded-[20px] border-2 border-slate-200 mt-5 md:mx-3">
                         <button onclick="toggleAccordion(2)"
                             class="w-full bg-white flex justify-between items-center p-5 text-[#2A324B] rounded-[20px]">
-                            <span class="font-bold">What can I do with Material Tailwind?</span>
+                            <span class="font-bold">Pusat informasi industri indonesia</span>
                             <span id="icon-3" class=" transition-transform duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                     class="w-4 h-4">
@@ -490,15 +500,15 @@
                         </button>
                         <div id="content-2" class="h-auto overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="pb-5 text-sm text-slate-500 m-3 font-medium ">
-                                Material Tailwind allows you to quickly build modern, responsive websites with a focus
-                                on design.
+                                Menyediakan pusat informasi komprehensif dan mempermudah akses tentang keragaman
+                                industri di Indonesia.
                             </div>
                         </div>
                     </div>
                     <div class="border rounded-[20px] border-2 border-slate-200 mt-5 md:ml-3">
                         <button onclick="toggleAccordion(3)"
                             class="w-full bg-white flex justify-between items-center p-5 text-[#2A324B] rounded-[20px]">
-                            <span class="font-bold">What can I do with Material Tailwind?</span>
+                            <span class="font-bold">Menginspirasi generasi muda indonesia</span>
                             <span id="icon-3" class=" transition-transform duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                     class="w-4 h-4">
@@ -509,8 +519,8 @@
                         </button>
                         <div id="content-3" class="h-auto overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="pb-5 text-sm text-slate-500 m-3 font-medium ">
-                                Material Tailwind allows you to quickly build modern, responsive websites with a focus
-                                on design.
+                                Menginspirasi generasi muda untuk lebih mengenal dan terlibat dalam pengembangan
+                                industri di indonesia
                             </div>
                         </div>
                     </div>
@@ -521,16 +531,19 @@
     </div>
     <!-- tujuan dan manfaat info -->
 
-    
+
     <!-- footer -->
-    <div class="mt-28 grid md:grid-cols-4 grid-cols-1 gap-4 p-6 bg-[#2A324B]  rounded-[30px] w-full h-[100vh] md:h-96 flex">
+    <div
+        class="mt-28 grid md:grid-cols-4 grid-cols-1 gap-4 p-6 bg-[#2A324B]  rounded-[30px] w-full h-[100vh] md:h-96 flex">
         <div class="col-span-2  p-4 h-24">
             <div class="flex w-60 rounded-[20px] justify-center align-center bg-white p-4 items-center">
                 <img class="w-10" src="src/logo (1).png" alt="">
                 <p class="text-3xl pl-2 font-bold text-[#2A324B]">Lokal<span class="text-[#D39362]">ind</span></p>
             </div>
-            <p class="text-white text-xs mt-5 md:w-80 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione reiciendis incidunt eius quae earum labore asperiores id ad? Quod?</p>
-            <p class="text-white text-xs mt-5 md:w-80 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione reiciendis incidunt eius quae earum labore asperiores id ad? Quod?</p>
+            <p class="text-white text-xs mt-5 md:w-80 ">Platform website yang hadir untuk membantu perkembangan industri di indonesia, dengan memberikan informasi dalam bentuk edukasi yang mudah diakses oleh masyarakat luas
+            </p>
+            <p class="text-white text-xs mt-5 md:w-80 ">Lokalind sebagai pusat penyedia informasi industri yang lengkap dan akurat, dengan informasi yang selalu terupdate
+            </p>
             <div class="flex gap gap-4 mt-12 items-center ">
                 <a href=""><img src="src/sosmed1.png" alt=""></a>
                 <a href=""><img src="src/sosmed2.png" alt=""></a>
@@ -538,22 +551,30 @@
                 <a href=""><img src="src/sosmed4.png" alt=""></a>
             </div>
         </div>
-        <div class="col-span-2 w-full grid grid-cols-2  flex justify-center align-center items-center p-4 flex-col font-semibold text-white h-full">
+        <div
+            class="col-span-2 w-full grid grid-cols-2  flex justify-center align-center items-center p-4 flex-col font-semibold text-white h-full">
             <a href="">Jelajahi</a>
             <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
-            <a href="">Komunitas</a>
+            <a class="font-normal" href="">Artikel</a>
+            <a class="font-normal" href="">Berita</a>
+            <a class="font-normal" href="">Industri</a>
+            <a class="font-normal" href="">Konsumen</a>
+            <a class="font-normal" href="">Profile</a>
+            <a class="font-normal" href="">Tujuan</a>
+            <a class="font-normal" href="">Manfaat</a>
+            <a class="font-normal" href="">Latar Belakang</a>
         </div>
     </div>
     <!-- footer -->
-     <p class="mb-5 w-full flex justify-center align-center items-center text-xs md:text-lg text-align font-medium mt-6">Copyright © 2024 Lokalind. All Rights Reserved.</p>
+    <p class="mb-5 w-full flex justify-center align-center items-center text-xs md:text-lg text-align font-medium mt-6">
+        Copyright © 2024 Lokalind. All Rights Reserved.</p>
     <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('block');
+        });
+
         const carouselSlide = document.querySelector('.carousel-slide');
         const slideImages = document.querySelectorAll('.carousel-slide > div');
 
